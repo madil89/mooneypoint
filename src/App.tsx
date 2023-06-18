@@ -20,7 +20,12 @@ function App() {
     <ThemeProvider theme={theme}>
       <div style={{ textAlign: 'center' }}>
         <div
-          style={{ maxWidth: 1200, minWidth: 1200, display: 'inline-block' }}
+          style={{
+            maxWidth: 1200,
+            minWidth: 1200,
+            display: 'inline-block',
+            marginBottom: '50px',
+          }}
         >
           <AppBarComponent />
           <HeadersPage />

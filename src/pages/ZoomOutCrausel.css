@@ -1,0 +1,15 @@
+.ZoomOutCarousel {
+  position: relative;
+}
+
+.ZoomOutCarousel .slide {
+  transition: transform 0.5s ease-in-out;
+}
+
+.ZoomOutCarousel .slide.current {
+  transform: scale(1);
+}
+
+.ZoomOutCarousel .slide.previous {
+  transform: scale(0.8);
+}

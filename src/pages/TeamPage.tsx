@@ -27,9 +27,9 @@ function TeamPage() {
   return (
     <Grid container spacing={4} style={{ marginTop: '20px' }}>
       <Grid item xs={8}>
-        <Carousel>
+        <Carousel autoPlay={true}>
           {team.map((member, index) => (
-            <div>
+            <div key={index}>
               <TeamCard
                 name={member.name}
                 designation={member.designation}

@@ -23,19 +23,19 @@ function ImageGrid() {
       <Grid container spacing={2} style={{ marginTop: '30px' }}>
         <Grid item xs={4}>
           <ImageWithText
-            url="https://source.unsplash.com/jpqyfK7GB4w/1920x1281"
+            url="https://source.unsplash.com/RBxxEUdRU50/1920x1281"
             description="Vehicle damage"
           />
         </Grid>
         <Grid item xs={4}>
           <ImageWithText
-            url="https://source.unsplash.com/jpqyfK7GB4w/1920x1281"
-            description="Montgage insurance"
+            url="https://source.unsplash.com/05XcCfTOzN4/1920x1281"
+            description="Mortgage insurance"
           />
         </Grid>
         <Grid item xs={4}>
           <ImageWithText
-            url="https://source.unsplash.com/jpqyfK7GB4w/1920x1281"
+            url="https://source.unsplash.com/-kMDy4lHvy4/1920x1281"
             description="Medical expenses"
           />
         </Grid>
