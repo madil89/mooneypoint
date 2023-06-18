@@ -1,0 +1,29 @@
+.image-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /* padding-bottom: 75%; Adjust the aspect ratio as needed */
+}
+
+.uncover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: uncover 1s ease-in-out forwards;
+}
+
+@keyframes uncover {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

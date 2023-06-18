@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { createTheme, ThemeProvider } from '@mui/material'
+import './App.css'
+import ImageGrid from './pages/ImageGrid'
+import HeadersPage from './pages/HeadersPage'
+import TeamPage from './pages/TeamPage'
+import SupportPage from './pages/SupportPage'
+import AppBarComponent from './pages/AppBarComponent'
+import ContactPage from './pages/ContactPage'
 
+const theme = createTheme({
+  // typography: {
+  //   fontFamily: [
+  //     'Poppins'
+  //   ].join(',')
+  // }
+})
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <ThemeProvider theme={theme}>
+      <div style={{ textAlign: 'center' }}>
+        <div
+          style={{ maxWidth: 1200, minWidth: 1200, display: 'inline-block' }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+          <AppBarComponent />
+          <HeadersPage />
+          <ImageGrid />
+          <TeamPage />
+          <SupportPage />
+          <ContactPage />
+        </div>
+      </div>
+    </ThemeProvider>
+  )
 }
 
-export default App;
+export default App
